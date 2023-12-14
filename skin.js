@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.1.13/18080
 // Filename: TreBrooklynBridgeApto84.ggsk
-// Generated 2023-12-14T12:57:56
+// Generated 2023-12-14T13:17:31
 
 function pano2vrSkin(player,base) {
 	player.addVariable('BASICO', 2, false);
@@ -15552,7 +15552,7 @@ function pano2vrSkin(player,base) {
 				me._tplanta_implantao.ggCurrentLogicStatePosition = newLogicStatePosition;
 				me._tplanta_implantao.style[domTransition]='left 0s, top 0s, ' + cssPrefix + 'transform 0s, background-color 0s';
 				if (me._tplanta_implantao.ggCurrentLogicStatePosition == 0) {
-					me._tplanta_implantao.style.left='459px';
+					me._tplanta_implantao.style.left='160px';
 					me._tplanta_implantao.style.top='73px';
 				}
 				else {
@@ -15822,7 +15822,7 @@ function pano2vrSkin(player,base) {
 				me._informaes_tcnicas.ggCurrentLogicStatePosition = newLogicStatePosition;
 				me._informaes_tcnicas.style[domTransition]='left 0s, top 0s, ' + cssPrefix + 'transform 0s, background-color 0s';
 				if (me._informaes_tcnicas.ggCurrentLogicStatePosition == 0) {
-					me._informaes_tcnicas.style.left='223px';
+					me._informaes_tcnicas.style.left='80px';
 					me._informaes_tcnicas.style.top='73px';
 				}
 				else {
@@ -16406,7 +16406,7 @@ function pano2vrSkin(player,base) {
 				me._unidades_m2.ggCurrentLogicStatePosition = newLogicStatePosition;
 				me._unidades_m2.style[domTransition]='left 0s, top 0s, ' + cssPrefix + 'transform 0s, background-color 0s';
 				if (me._unidades_m2.ggCurrentLogicStatePosition == 0) {
-					me._unidades_m2.style.left='-10px';
+					me._unidades_m2.style.left='-20px';
 					me._unidades_m2.style.top='73px';
 				}
 				else {
@@ -20721,7 +20721,7 @@ function pano2vrSkin(player,base) {
 		hs+='height : 50px;';
 		hs+='left : -10000px;';
 		hs+='position : absolute;';
-		hs+='top : 630px;';
+		hs+='top : 90px;';
 		hs+='visibility : hidden;';
 		hs+='width : 47px;';
 		hs+='pointer-events:none;';
@@ -20748,8 +20748,8 @@ function pano2vrSkin(player,base) {
 				me._unidadesm2.ggCurrentLogicStateScaling = newLogicStateScaling;
 				me._unidadesm2.style[domTransition]='' + cssPrefix + 'transform 0s';
 				if (me._unidadesm2.ggCurrentLogicStateScaling == 0) {
-					me._unidadesm2.ggParameter.sx = 0.9;
-					me._unidadesm2.ggParameter.sy = 0.9;
+					me._unidadesm2.ggParameter.sx = 0.5;
+					me._unidadesm2.ggParameter.sy = 0.5;
 					me._unidadesm2.style[domTransform]=parameterToTransform(me._unidadesm2.ggParameter);
 				}
 				else {
@@ -20798,8 +20798,8 @@ function pano2vrSkin(player,base) {
 		}
 		el=me._rectangle_1=document.createElement('div');
 		el.ggId="Rectangle 1";
-		el.ggDx=-346;
-		el.ggParameter={ rx:0,ry:0,a:90,sx:1,sy:1 };
+		el.ggDx=-353;
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
 		el.ggVisible=false;
 		el.className="ggskin ggskin_rectangle ";
 		el.ggType='rectangle';
@@ -20812,13 +20812,12 @@ function pano2vrSkin(player,base) {
 		hs+='height : 81px;';
 		hs+='left : -10000px;';
 		hs+='position : absolute;';
-		hs+='top : -415px;';
+		hs+='top : -413px;';
 		hs+='visibility : hidden;';
-		hs+='width : 578px;';
+		hs+='width : 564px;';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style[domTransform + 'Origin']='50% 50%';
-		el.style[domTransform]=parameterToTransform(el.ggParameter);
 		me._rectangle_1.ggIsActive=function() {
 			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
 				return this.parentNode.ggIsActive();
