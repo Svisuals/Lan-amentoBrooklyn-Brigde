@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.1.13/18080
 // Filename: TreBrooklynBridgeApto84.ggsk
-// Generated 2023-12-14T15:41:22
+// Generated 2023-12-14T15:50:21
 
 function pano2vrSkin(player,base) {
 	player.addVariable('BASICO', 2, false);
@@ -8715,7 +8715,7 @@ function pano2vrSkin(player,base) {
 				me._info_tec.style[domTransition]='left 0s, top 0s';
 				if (me._info_tec.ggCurrentLogicStatePosition == 0) {
 					me._info_tec.style.left='82px';
-					me._info_tec.style.top='100px';
+					me._info_tec.style.top='180px';
 				}
 				else {
 					me._info_tec.style.left='22px';
@@ -15121,6 +15121,13 @@ function pano2vrSkin(player,base) {
 			{
 				newLogicStateScaling = 0;
 			}
+			else if (
+				((player.getViewerSize().width <= 1028)) && 
+				((me.elementMouseOver['tplanta_implantao'] == true))
+			)
+			{
+				newLogicStateScaling = 1;
+			}
 			else {
 				newLogicStateScaling = -1;
 			}
@@ -15130,6 +15137,11 @@ function pano2vrSkin(player,base) {
 				if (me._tplanta_implantao.ggCurrentLogicStateScaling == 0) {
 					me._tplanta_implantao.ggParameter.sx = 0.6;
 					me._tplanta_implantao.ggParameter.sy = 0.6;
+					me._tplanta_implantao.style[domTransform]=parameterToTransform(me._tplanta_implantao.ggParameter);
+				}
+				else if (me._tplanta_implantao.ggCurrentLogicStateScaling == 1) {
+					me._tplanta_implantao.ggParameter.sx = 0.8;
+					me._tplanta_implantao.ggParameter.sy = 0.8;
 					me._tplanta_implantao.style[domTransform]=parameterToTransform(me._tplanta_implantao.ggParameter);
 				}
 				else {
@@ -15203,6 +15215,7 @@ function pano2vrSkin(player,base) {
 		}
 		me._tplanta_implantao.onmouseover=function (e) {
 			me.elementMouseOver['tplanta_implantao']=true;
+			me._tplanta_implantao.logicBlock_scaling();
 			me._tplanta_implantao.logicBlock_backgroundcolor();
 		}
 		me._tplanta_implantao.onmouseout=function (e) {
@@ -15214,10 +15227,12 @@ function pano2vrSkin(player,base) {
 				}
 			}
 			me.elementMouseOver['tplanta_implantao']=false;
+			me._tplanta_implantao.logicBlock_scaling();
 			me._tplanta_implantao.logicBlock_backgroundcolor();
 		}
 		me._tplanta_implantao.ontouchend=function (e) {
 			me.elementMouseOver['tplanta_implantao']=false;
+			me._tplanta_implantao.logicBlock_scaling();
 			me._tplanta_implantao.logicBlock_backgroundcolor();
 		}
 		me._tplanta_implantao.ggUpdatePosition=function (useTransition) {
@@ -15391,6 +15406,13 @@ function pano2vrSkin(player,base) {
 			{
 				newLogicStateScaling = 0;
 			}
+			else if (
+				((player.getViewerSize().width <= 1028)) && 
+				((me.elementMouseOver['informaes_tcnicas'] == true))
+			)
+			{
+				newLogicStateScaling = 1;
+			}
 			else {
 				newLogicStateScaling = -1;
 			}
@@ -15400,6 +15422,11 @@ function pano2vrSkin(player,base) {
 				if (me._informaes_tcnicas.ggCurrentLogicStateScaling == 0) {
 					me._informaes_tcnicas.ggParameter.sx = 0.6;
 					me._informaes_tcnicas.ggParameter.sy = 0.6;
+					me._informaes_tcnicas.style[domTransform]=parameterToTransform(me._informaes_tcnicas.ggParameter);
+				}
+				else if (me._informaes_tcnicas.ggCurrentLogicStateScaling == 1) {
+					me._informaes_tcnicas.ggParameter.sx = 0.8;
+					me._informaes_tcnicas.ggParameter.sy = 0.8;
 					me._informaes_tcnicas.style[domTransform]=parameterToTransform(me._informaes_tcnicas.ggParameter);
 				}
 				else {
@@ -15825,6 +15852,7 @@ function pano2vrSkin(player,base) {
 		}
 		me._informaes_tcnicas.onmouseover=function (e) {
 			me.elementMouseOver['informaes_tcnicas']=true;
+			me._informaes_tcnicas.logicBlock_scaling();
 			me._informaes_tcnicas.logicBlock_backgroundcolor();
 		}
 		me._informaes_tcnicas.onmouseout=function (e) {
@@ -15836,10 +15864,12 @@ function pano2vrSkin(player,base) {
 				}
 			}
 			me.elementMouseOver['informaes_tcnicas']=false;
+			me._informaes_tcnicas.logicBlock_scaling();
 			me._informaes_tcnicas.logicBlock_backgroundcolor();
 		}
 		me._informaes_tcnicas.ontouchend=function (e) {
 			me.elementMouseOver['informaes_tcnicas']=false;
+			me._informaes_tcnicas.logicBlock_scaling();
 			me._informaes_tcnicas.logicBlock_backgroundcolor();
 		}
 		me._informaes_tcnicas.ggUpdatePosition=function (useTransition) {
@@ -16004,6 +16034,13 @@ function pano2vrSkin(player,base) {
 			{
 				newLogicStateScaling = 0;
 			}
+			else if (
+				((player.getViewerSize().width <= 1028)) && 
+				((me.elementMouseOver['unidades_m2'] == true))
+			)
+			{
+				newLogicStateScaling = 1;
+			}
 			else {
 				newLogicStateScaling = -1;
 			}
@@ -16013,6 +16050,11 @@ function pano2vrSkin(player,base) {
 				if (me._unidades_m2.ggCurrentLogicStateScaling == 0) {
 					me._unidades_m2.ggParameter.sx = 0.6;
 					me._unidades_m2.ggParameter.sy = 0.6;
+					me._unidades_m2.style[domTransform]=parameterToTransform(me._unidades_m2.ggParameter);
+				}
+				else if (me._unidades_m2.ggCurrentLogicStateScaling == 1) {
+					me._unidades_m2.ggParameter.sx = 0.8;
+					me._unidades_m2.ggParameter.sy = 0.8;
 					me._unidades_m2.style[domTransform]=parameterToTransform(me._unidades_m2.ggParameter);
 				}
 				else {
@@ -16150,6 +16192,7 @@ function pano2vrSkin(player,base) {
 		}
 		me._unidades_m2.onmouseover=function (e) {
 			me.elementMouseOver['unidades_m2']=true;
+			me._unidades_m2.logicBlock_scaling();
 			me._unidades_m2.logicBlock_backgroundcolor();
 		}
 		me._unidades_m2.onmouseout=function (e) {
@@ -16161,10 +16204,12 @@ function pano2vrSkin(player,base) {
 				}
 			}
 			me.elementMouseOver['unidades_m2']=false;
+			me._unidades_m2.logicBlock_scaling();
 			me._unidades_m2.logicBlock_backgroundcolor();
 		}
 		me._unidades_m2.ontouchend=function (e) {
 			me.elementMouseOver['unidades_m2']=false;
+			me._unidades_m2.logicBlock_scaling();
 			me._unidades_m2.logicBlock_backgroundcolor();
 		}
 		me._unidades_m2.ggUpdatePosition=function (useTransition) {
