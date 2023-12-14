@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.1.13/18080
 // Filename: TreBrooklynBridgeApto84.ggsk
-// Generated 2023-12-14T15:23:15
+// Generated 2023-12-14T15:41:22
 
 function pano2vrSkin(player,base) {
 	player.addVariable('BASICO', 2, false);
@@ -8714,8 +8714,8 @@ function pano2vrSkin(player,base) {
 				me._info_tec.ggCurrentLogicStatePosition = newLogicStatePosition;
 				me._info_tec.style[domTransition]='left 0s, top 0s';
 				if (me._info_tec.ggCurrentLogicStatePosition == 0) {
-					me._info_tec.style.left='52px';
-					me._info_tec.style.top='130px';
+					me._info_tec.style.left='82px';
+					me._info_tec.style.top='100px';
 				}
 				else {
 					me._info_tec.style.left='22px';
@@ -20265,8 +20265,8 @@ function pano2vrSkin(player,base) {
 				me.__457.ggCurrentLogicStateScaling = newLogicStateScaling;
 				me.__457.style[domTransition]='' + cssPrefix + 'transform 500ms ease 0ms, background-color 0s';
 				if (me.__457.ggCurrentLogicStateScaling == 0) {
-					me.__457.ggParameter.sx = 1.5;
-					me.__457.ggParameter.sy = 1.5;
+					me.__457.ggParameter.sx = 2;
+					me.__457.ggParameter.sy = 2;
 					me.__457.style[domTransform]=parameterToTransform(me.__457.ggParameter);
 				}
 				else {
@@ -20430,8 +20430,8 @@ function pano2vrSkin(player,base) {
 				me.__651.ggCurrentLogicStateScaling = newLogicStateScaling;
 				me.__651.style[domTransition]='' + cssPrefix + 'transform 500ms ease 0ms, background-color 0s';
 				if (me.__651.ggCurrentLogicStateScaling == 0) {
-					me.__651.ggParameter.sx = 1.5;
-					me.__651.ggParameter.sy = 1.5;
+					me.__651.ggParameter.sx = 2;
+					me.__651.ggParameter.sy = 2;
 					me.__651.style[domTransform]=parameterToTransform(me.__651.ggParameter);
 				}
 				else {
@@ -20595,8 +20595,8 @@ function pano2vrSkin(player,base) {
 				me.__584.ggCurrentLogicStateScaling = newLogicStateScaling;
 				me.__584.style[domTransition]='' + cssPrefix + 'transform 500ms ease 0ms, background-color 0s';
 				if (me.__584.ggCurrentLogicStateScaling == 0) {
-					me.__584.ggParameter.sx = 1.5;
-					me.__584.ggParameter.sy = 1.5;
+					me.__584.ggParameter.sx = 2;
+					me.__584.ggParameter.sy = 2;
 					me.__584.style[domTransform]=parameterToTransform(me.__584.ggParameter);
 				}
 				else {
@@ -20760,8 +20760,8 @@ function pano2vrSkin(player,base) {
 				me.__746.ggCurrentLogicStateScaling = newLogicStateScaling;
 				me.__746.style[domTransition]='' + cssPrefix + 'transform 500ms ease 0ms, background-color 0s';
 				if (me.__746.ggCurrentLogicStateScaling == 0) {
-					me.__746.ggParameter.sx = 1.5;
-					me.__746.ggParameter.sy = 1.5;
+					me.__746.ggParameter.sx = 2;
+					me.__746.ggParameter.sy = 2;
 					me.__746.style[domTransform]=parameterToTransform(me.__746.ggParameter);
 				}
 				else {
@@ -20926,8 +20926,8 @@ function pano2vrSkin(player,base) {
 				me.__842_.ggCurrentLogicStateScaling = newLogicStateScaling;
 				me.__842_.style[domTransition]='' + cssPrefix + 'transform 500ms ease 0ms, background-color 0s';
 				if (me.__842_.ggCurrentLogicStateScaling == 0) {
-					me.__842_.ggParameter.sx = 1.5;
-					me.__842_.ggParameter.sy = 1.5;
+					me.__842_.ggParameter.sx = 2;
+					me.__842_.ggParameter.sy = 2;
 					me.__842_.style[domTransform]=parameterToTransform(me.__842_.ggParameter);
 				}
 				else {
@@ -21094,8 +21094,8 @@ function pano2vrSkin(player,base) {
 				me.__675.ggCurrentLogicStateScaling = newLogicStateScaling;
 				me.__675.style[domTransition]='' + cssPrefix + 'transform 500ms ease 0ms, background-color 0s';
 				if (me.__675.ggCurrentLogicStateScaling == 0) {
-					me.__675.ggParameter.sx = 1.5;
-					me.__675.ggParameter.sy = 1.5;
+					me.__675.ggParameter.sx = 2;
+					me.__675.ggParameter.sy = 2;
 					me.__675.style[domTransform]=parameterToTransform(me.__675.ggParameter);
 				}
 				else {
@@ -22275,8 +22275,8 @@ function pano2vrSkin(player,base) {
 				me.__448.ggCurrentLogicStateScaling = newLogicStateScaling;
 				me.__448.style[domTransition]='' + cssPrefix + 'transform 500ms ease 0ms, background-color 0s';
 				if (me.__448.ggCurrentLogicStateScaling == 0) {
-					me.__448.ggParameter.sx = 1.5;
-					me.__448.ggParameter.sy = 1.5;
+					me.__448.ggParameter.sx = 2;
+					me.__448.ggParameter.sy = 2;
 					me.__448.style[domTransform]=parameterToTransform(me.__448.ggParameter);
 				}
 				else {
