@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.1.13/18080
 // Filename: TreBrooklynBridgeApto84.ggsk
-// Generated 2023-12-15T00:46:28
+// Generated 2023-12-15T00:49:35
 
 function pano2vrSkin(player,base) {
 	player.addVariable('BASICO', 2, false);
@@ -17818,10 +17818,17 @@ function pano2vrSkin(player,base) {
 		me._text_apto_84m2.logicBlock_scaling = function() {
 			var newLogicStateScaling;
 			if (
+				((me.elementMouseOver['text_apto_84m2'] == true)) && 
 				((player.getViewerSize().width <= 1028))
 			)
 			{
 				newLogicStateScaling = 0;
+			}
+			else if (
+				((player.getViewerSize().width <= 1028))
+			)
+			{
+				newLogicStateScaling = 1;
 			}
 			else {
 				newLogicStateScaling = -1;
@@ -17830,6 +17837,11 @@ function pano2vrSkin(player,base) {
 				me._text_apto_84m2.ggCurrentLogicStateScaling = newLogicStateScaling;
 				me._text_apto_84m2.style[domTransition]='left 0s, top 0s, ' + cssPrefix + 'transform 0s';
 				if (me._text_apto_84m2.ggCurrentLogicStateScaling == 0) {
+					me._text_apto_84m2.ggParameter.sx = 1;
+					me._text_apto_84m2.ggParameter.sy = 1;
+					me._text_apto_84m2.style[domTransform]=parameterToTransform(me._text_apto_84m2.ggParameter);
+				}
+				else if (me._text_apto_84m2.ggCurrentLogicStateScaling == 1) {
 					me._text_apto_84m2.ggParameter.sx = 0.6;
 					me._text_apto_84m2.ggParameter.sy = 0.6;
 					me._text_apto_84m2.style[domTransform]=parameterToTransform(me._text_apto_84m2.ggParameter);
@@ -17967,6 +17979,7 @@ function pano2vrSkin(player,base) {
 		me._text_apto_84m2.onmouseover=function (e) {
 			me.elementMouseOver['text_apto_84m2']=true;
 			me._text_apto_84m2.logicBlock_position();
+			me._text_apto_84m2.logicBlock_scaling();
 			me._text_apto_84m2.logicBlock_visible();
 		}
 		me._text_apto_84m2.onmouseout=function (e) {
@@ -17979,11 +17992,13 @@ function pano2vrSkin(player,base) {
 			}
 			me.elementMouseOver['text_apto_84m2']=false;
 			me._text_apto_84m2.logicBlock_position();
+			me._text_apto_84m2.logicBlock_scaling();
 			me._text_apto_84m2.logicBlock_visible();
 		}
 		me._text_apto_84m2.ontouchend=function (e) {
 			me.elementMouseOver['text_apto_84m2']=false;
 			me._text_apto_84m2.logicBlock_position();
+			me._text_apto_84m2.logicBlock_scaling();
 			me._text_apto_84m2.logicBlock_visible();
 		}
 		me._text_apto_84m2.ggUpdatePosition=function (useTransition) {
