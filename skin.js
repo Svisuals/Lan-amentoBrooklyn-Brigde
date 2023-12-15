@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.1.13/18080
 // Filename: TreBrooklynBridgeApto84.ggsk
-// Generated 2023-12-15T09:33:28
+// Generated 2023-12-15T09:42:49
 
 function pano2vrSkin(player,base) {
 	player.addVariable('BASICO', 2, false);
@@ -5432,11 +5432,11 @@ function pano2vrSkin(player,base) {
 		hs+='top:  0px;';
 		hs+='width: 218px;';
 		hs+='height: auto;';
-		hs+='background: #2f2f2f;';
-		hs+='border: 2px solid #ffffff;';
+		hs+='background: #ffffff;';
+		hs+='border: 2px solid #000000;';
 		hs+='border-radius: 10px;';
 		hs+=cssPrefix + 'border-radius: 10px;';
-		hs+='color: rgba(255,255,255,1);';
+		hs+='color: rgba(0,0,0,1);';
 		hs+='text-align: center;';
 		hs+='white-space: pre-wrap;';
 		hs+='padding: 2px 3px 2px 3px;';
@@ -5470,7 +5470,7 @@ function pano2vrSkin(player,base) {
 			}
 			if (me._p2.ggCurrentLogicStateVisible != newLogicStateVisible) {
 				me._p2.ggCurrentLogicStateVisible = newLogicStateVisible;
-				me._p2.style[domTransition]='background-color 0s, border-color 0s, color 0s';
+				me._p2.style[domTransition]='';
 				if (me._p2.ggCurrentLogicStateVisible == 0) {
 					me._p2.style.visibility=(Number(me._p2.style.opacity)>0||!me._p2.style.opacity)?'inherit':'hidden';
 					me._p2.ggVisible=true;
@@ -5480,97 +5480,6 @@ function pano2vrSkin(player,base) {
 					me._p2.ggVisible=false;
 				}
 			}
-		}
-		me._p2.logicBlock_backgroundcolor = function() {
-			var newLogicStateBackgroundColor;
-			if (
-				((me.elementMouseOver['p2'] == true))
-			)
-			{
-				newLogicStateBackgroundColor = 0;
-			}
-			else {
-				newLogicStateBackgroundColor = -1;
-			}
-			if (me._p2.ggCurrentLogicStateBackgroundColor != newLogicStateBackgroundColor) {
-				me._p2.ggCurrentLogicStateBackgroundColor = newLogicStateBackgroundColor;
-				me._p2__text.style[domTransition]='background-color 0s, border-color 0s, color 0s';
-				if (me._p2.ggCurrentLogicStateBackgroundColor == 0) {
-					me._p2__text.style.backgroundColor="rgba(255,255,255,1)";
-				}
-				else {
-					me._p2__text.style.backgroundColor="rgba(47,47,47,1)";
-				}
-			}
-		}
-		me._p2.logicBlock_bordercolor = function() {
-			var newLogicStateBorderColor;
-			if (
-				((me.elementMouseOver['p2'] == true))
-			)
-			{
-				newLogicStateBorderColor = 0;
-			}
-			else {
-				newLogicStateBorderColor = -1;
-			}
-			if (me._p2.ggCurrentLogicStateBorderColor != newLogicStateBorderColor) {
-				me._p2.ggCurrentLogicStateBorderColor = newLogicStateBorderColor;
-				me._p2__text.style[domTransition]='background-color 0s, border-color 0s, color 0s';
-				if (me._p2.ggCurrentLogicStateBorderColor == 0) {
-					me._p2__text.style.borderColor="rgba(255,255,255,1)";
-				}
-				else {
-					me._p2__text.style.borderColor="rgba(255,255,255,1)";
-				}
-			}
-		}
-		me._p2.logicBlock_textcolor = function() {
-			var newLogicStateTextColor;
-			if (
-				((me.elementMouseOver['p2'] == true))
-			)
-			{
-				newLogicStateTextColor = 0;
-			}
-			else {
-				newLogicStateTextColor = -1;
-			}
-			if (me._p2.ggCurrentLogicStateTextColor != newLogicStateTextColor) {
-				me._p2.ggCurrentLogicStateTextColor = newLogicStateTextColor;
-				me._p2__text.style[domTransition]='background-color 0s, border-color 0s, color 0s';
-				if (me._p2.ggCurrentLogicStateTextColor == 0) {
-					me._p2__text.style.color="rgba(0,0,0,1)";
-				}
-				else {
-					me._p2__text.style.color="rgba(255,255,255,1)";
-				}
-			}
-		}
-		me._p2.onmouseover=function (e) {
-			me.elementMouseOver['p2']=true;
-			me._p2.logicBlock_backgroundcolor();
-			me._p2.logicBlock_bordercolor();
-			me._p2.logicBlock_textcolor();
-		}
-		me._p2.onmouseout=function (e) {
-			if (e && e.toElement) {
-				var current = e.toElement;
-				while (current = current.parentNode) {
-				if (current == me._p2__text)
-					return;
-				}
-			}
-			me.elementMouseOver['p2']=false;
-			me._p2.logicBlock_backgroundcolor();
-			me._p2.logicBlock_bordercolor();
-			me._p2.logicBlock_textcolor();
-		}
-		me._p2.ontouchend=function (e) {
-			me.elementMouseOver['p2']=false;
-			me._p2.logicBlock_backgroundcolor();
-			me._p2.logicBlock_bordercolor();
-			me._p2.logicBlock_textcolor();
 		}
 		me._p2.ggUpdatePosition=function (useTransition) {
 		}
